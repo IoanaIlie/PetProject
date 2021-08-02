@@ -98,35 +98,35 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table57 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table57.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "id",
                             "1"});
-                table57.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "username",
                             "username123"});
-                table57.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "firstName",
                             "firstName123"});
-                table57.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "lastName",
                             "lastName123"});
-                table57.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "email",
                             "email123"});
-                table57.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "password",
                             "password123"});
-                table57.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "phone",
                             "phone123"});
-                table57.AddRow(new string[] {
+                table19.AddRow(new string[] {
                             "userStatus",
                             "0"});
 #line 5
- testRunner.Given("the user with:", ((string)(null)), table57, "Given ");
+ testRunner.Given("the user with:", ((string)(null)), table19, "Given ");
 #line hidden
 #line 15
  testRunner.When("a user is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

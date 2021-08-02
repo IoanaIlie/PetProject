@@ -213,6 +213,11 @@ namespace PetSwagger
                         {
                             string responseText_ = (response_.Content == null) ? string.Empty : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
                             throw new ApiException("Invalid input", status_, responseText_, headers_, null);
+                        } if(status_ == 404)
+                        {
+                            PetResponse petResponse = new PetResponse();
+                            petResponse.ResponseStatus = status_;
+                            return petResponse;
                         }
                         else
                         if (status_ == 200 || status_ == 204)
@@ -317,8 +322,9 @@ namespace PetSwagger
                         else
                         if (status_ == 404)
                         {
-                            string responseText_ = (response_.Content == null) ? string.Empty : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
-                            throw new ApiException("Pet not found", status_, responseText_, headers_, null);
+                            PetResponse petResponse = new PetResponse();
+                            petResponse.ResponseStatus = status_;
+                            return petResponse;
                         }
                         else
                         if (status_ == 405)
@@ -616,8 +622,9 @@ namespace PetSwagger
                         else
                         if (status_ == 404)
                         {
-                            string responseText_ = (response_.Content == null) ? string.Empty : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
-                            throw new ApiException("Pet not found", status_, responseText_, headers_, null);
+                            PetResponse petResponse = new PetResponse();
+                            petResponse.ResponseStatus = status_;
+                            return petResponse;
                         }
                         else
                         {
