@@ -108,32 +108,32 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table39 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table1.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "name",
                             string.Format("{0}", name)});
-                table1.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "status",
                             string.Format("{0}", status)});
-                table1.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "categoryId",
                             string.Format("{0}", categoryId)});
-                table1.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "categoryName",
                             string.Format("{0}", categoryName)});
-                table1.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "photoUrls",
                             "default"});
-                table1.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "tagId",
                             string.Format("{0}", tagId)});
-                table1.AddRow(new string[] {
+                table39.AddRow(new string[] {
                             "tagName",
                             string.Format("{0}", tagName)});
 #line 8
- testRunner.Given("the pet with:", ((string)(null)), table1, "Given ");
+ testRunner.Given("the pet with:", ((string)(null)), table39, "Given ");
 #line hidden
 #line 17
  testRunner.When("a pet is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -228,20 +228,20 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table40 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table2.AddRow(new string[] {
+                table40.AddRow(new string[] {
                             "id",
                             string.Format("{0}", id)});
-                table2.AddRow(new string[] {
+                table40.AddRow(new string[] {
                             "name",
                             string.Format("{0}", name)});
-                table2.AddRow(new string[] {
+                table40.AddRow(new string[] {
                             "photoUrls",
                             "default"});
 #line 33
- testRunner.Given("the pet with:", ((string)(null)), table2, "Given ");
+ testRunner.Given("the pet with:", ((string)(null)), table40, "Given ");
 #line hidden
 #line 38
  testRunner.When("a pet is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -335,23 +335,23 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table41 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table3.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "id",
                             string.Format("{0}", id1)});
-                table3.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "name",
                             "Dog"});
-                table3.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "status",
                             string.Format("{0}", status1)});
-                table3.AddRow(new string[] {
+                table41.AddRow(new string[] {
                             "photoUrls",
                             "default"});
 #line 51
- testRunner.Given("the pet with:", ((string)(null)), table3, "Given ");
+ testRunner.Given("the pet with:", ((string)(null)), table41, "Given ");
 #line hidden
 #line 57
  testRunner.When("a pet is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -359,23 +359,23 @@ this.ScenarioInitialize(scenarioInfo);
 #line 58
  testRunner.Then("the response code should be \"200\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
-                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table42 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table4.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "id",
                             string.Format("{0}", id2)});
-                table4.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "name",
                             "Dog"});
-                table4.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "status",
                             string.Format("{0}", status2)});
-                table4.AddRow(new string[] {
+                table42.AddRow(new string[] {
                             "photoUrls",
                             "default"});
 #line 59
- testRunner.Given("the pet with:", ((string)(null)), table4, "Given ");
+ testRunner.Given("the pet with:", ((string)(null)), table42, "Given ");
 #line hidden
 #line 65
  testRunner.When("a pet is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -594,32 +594,32 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table43 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "name",
                             string.Format("{0}", name1)});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "status",
                             string.Format("{0}", status1)});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "categoryId",
                             string.Format("{0}", categoryId1)});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "categoryName",
                             string.Format("{0}", categoryName1)});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "photoUrls",
                             "default"});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "tagId",
                             string.Format("{0}", tagId1)});
-                table5.AddRow(new string[] {
+                table43.AddRow(new string[] {
                             "tagName",
                             string.Format("{0}", tagName1)});
 #line 95
- testRunner.Given("the pet with:", ((string)(null)), table5, "Given ");
+ testRunner.Given("the pet with:", ((string)(null)), table43, "Given ");
 #line hidden
 #line 104
  testRunner.When("a pet is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -630,32 +630,32 @@ this.ScenarioInitialize(scenarioInfo);
 #line 106
  testRunner.And("the response contains the posted values", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table44 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table6.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "name",
                             string.Format("{0}", name2)});
-                table6.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "status",
                             string.Format("{0}", status2)});
-                table6.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "categoryId",
                             string.Format("{0}", categoryId2)});
-                table6.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "categoryName",
                             string.Format("{0}", categoryName2)});
-                table6.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "photoUrls",
                             "default2"});
-                table6.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "tagId",
                             string.Format("{0}", tagId2)});
-                table6.AddRow(new string[] {
+                table44.AddRow(new string[] {
                             "tagName",
                             string.Format("{0}", tagName2)});
 #line 107
- testRunner.Given("the pet with:", ((string)(null)), table6, "Given ");
+ testRunner.Given("the pet with:", ((string)(null)), table44, "Given ");
 #line hidden
 #line 116
  testRunner.When("the pet is updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -769,32 +769,32 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table7 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table45 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table7.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "name",
                             string.Format("{0}", name1)});
-                table7.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "status",
                             string.Format("{0}", status1)});
-                table7.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "categoryId",
                             string.Format("{0}", categoryId1)});
-                table7.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "categoryName",
                             string.Format("{0}", categoryName1)});
-                table7.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "photoUrls",
                             "default"});
-                table7.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "tagId",
                             string.Format("{0}", tagId1)});
-                table7.AddRow(new string[] {
+                table45.AddRow(new string[] {
                             "tagName",
                             string.Format("{0}", tagName1)});
 #line 131
- testRunner.Given("the pet with:", ((string)(null)), table7, "Given ");
+ testRunner.Given("the pet with:", ((string)(null)), table45, "Given ");
 #line hidden
 #line 140
  testRunner.When("a pet is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -805,32 +805,32 @@ this.ScenarioInitialize(scenarioInfo);
 #line 142
  testRunner.And("the response contains the posted values", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table46 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table8.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "id",
                             string.Format("{0}", id2)});
-                table8.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "name",
                             string.Format("{0}", name2)});
-                table8.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "categoryId",
                             string.Format("{0}", categoryId2)});
-                table8.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "categoryName",
                             string.Format("{0}", categoryName2)});
-                table8.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "photoUrls",
                             "default2"});
-                table8.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "tagId",
                             string.Format("{0}", tagId2)});
-                table8.AddRow(new string[] {
+                table46.AddRow(new string[] {
                             "tagName",
                             string.Format("{0}", tagName2)});
 #line 143
- testRunner.Given("the pet with:", ((string)(null)), table8, "Given ");
+ testRunner.Given("the pet with:", ((string)(null)), table46, "Given ");
 #line hidden
 #line 152
  testRunner.When("the pet is updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -898,32 +898,32 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table47 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table9.AddRow(new string[] {
+                table47.AddRow(new string[] {
                             "name",
                             string.Format("{0}", name)});
-                table9.AddRow(new string[] {
+                table47.AddRow(new string[] {
                             "status",
                             string.Format("{0}", status)});
-                table9.AddRow(new string[] {
+                table47.AddRow(new string[] {
                             "categoryId",
                             string.Format("{0}", categoryId)});
-                table9.AddRow(new string[] {
+                table47.AddRow(new string[] {
                             "categoryName",
                             string.Format("{0}", categoryName)});
-                table9.AddRow(new string[] {
+                table47.AddRow(new string[] {
                             "photoUrls",
                             "default"});
-                table9.AddRow(new string[] {
+                table47.AddRow(new string[] {
                             "tagId",
                             string.Format("{0}", tagId)});
-                table9.AddRow(new string[] {
+                table47.AddRow(new string[] {
                             "tagName",
                             string.Format("{0}", tagName)});
 #line 162
- testRunner.Given("the pet with:", ((string)(null)), table9, "Given ");
+ testRunner.Given("the pet with:", ((string)(null)), table47, "Given ");
 #line hidden
 #line 171
  testRunner.When("a pet is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -1011,14 +1011,14 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table10.AddRow(new string[] {
+                table48.AddRow(new string[] {
                             "id",
                             string.Format("{0}", id)});
 #line 188
- testRunner.Given("the pet with:", ((string)(null)), table10, "Given ");
+ testRunner.Given("the pet with:", ((string)(null)), table48, "Given ");
 #line hidden
 #line 191
  testRunner.When("the pet is deleted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -1090,20 +1090,20 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table11.AddRow(new string[] {
+                table49.AddRow(new string[] {
                             "name",
                             string.Format("{0}", name1)});
-                table11.AddRow(new string[] {
+                table49.AddRow(new string[] {
                             "status",
                             string.Format("{0}", status1)});
-                table11.AddRow(new string[] {
+                table49.AddRow(new string[] {
                             "photoUrls",
                             "default"});
 #line 203
- testRunner.Given("the pet with:", ((string)(null)), table11, "Given ");
+ testRunner.Given("the pet with:", ((string)(null)), table49, "Given ");
 #line hidden
 #line 208
  testRunner.When("a pet is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -1114,17 +1114,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 210
  testRunner.And("the response contains the posted values", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table50 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table12.AddRow(new string[] {
+                table50.AddRow(new string[] {
                             "name",
                             string.Format("{0}", name2)});
-                table12.AddRow(new string[] {
+                table50.AddRow(new string[] {
                             "status",
                             string.Format("{0}", status2)});
 #line 211
- testRunner.Given("the values:", ((string)(null)), table12, "Given ");
+ testRunner.Given("the values:", ((string)(null)), table50, "Given ");
 #line hidden
 #line 215
  testRunner.When("the name and/or status of the pet are updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -1229,20 +1229,20 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table51 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table13.AddRow(new string[] {
+                table51.AddRow(new string[] {
                             "name",
                             string.Format("{0}", name1)});
-                table13.AddRow(new string[] {
+                table51.AddRow(new string[] {
                             "status",
                             string.Format("{0}", status1)});
-                table13.AddRow(new string[] {
+                table51.AddRow(new string[] {
                             "photoUrls",
                             "default"});
 #line 230
- testRunner.Given("the pet with:", ((string)(null)), table13, "Given ");
+ testRunner.Given("the pet with:", ((string)(null)), table51, "Given ");
 #line hidden
 #line 235
  testRunner.When("a pet is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -1253,17 +1253,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 237
  testRunner.And("the response contains the posted values", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table52 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table14.AddRow(new string[] {
+                table52.AddRow(new string[] {
                             "name",
                             string.Format("{0}", name2)});
-                table14.AddRow(new string[] {
+                table52.AddRow(new string[] {
                             "status",
                             string.Format("{0}", status2)});
 #line 238
- testRunner.Given("the values:", ((string)(null)), table14, "Given ");
+ testRunner.Given("the values:", ((string)(null)), table52, "Given ");
 #line hidden
 #line 242
  testRunner.When("the \"form\" of the pet is updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -1342,20 +1342,20 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table53 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table15.AddRow(new string[] {
+                table53.AddRow(new string[] {
                             "id",
                             "999999"});
-                table15.AddRow(new string[] {
+                table53.AddRow(new string[] {
                             "name",
                             "Lila"});
-                table15.AddRow(new string[] {
+                table53.AddRow(new string[] {
                             "status",
                             "sold"});
 #line 255
- testRunner.Given("the values:", ((string)(null)), table15, "Given ");
+ testRunner.Given("the values:", ((string)(null)), table53, "Given ");
 #line hidden
 #line 260
  testRunner.When("the \"form\" of the pet is updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -1395,20 +1395,20 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table54 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table16.AddRow(new string[] {
+                table54.AddRow(new string[] {
                             "name",
                             "Lila"});
-                table16.AddRow(new string[] {
+                table54.AddRow(new string[] {
                             "status",
                             "1"});
-                table16.AddRow(new string[] {
+                table54.AddRow(new string[] {
                             "photoUrls",
                             "default"});
 #line 265
- testRunner.Given("the pet with:", ((string)(null)), table16, "Given ");
+ testRunner.Given("the pet with:", ((string)(null)), table54, "Given ");
 #line hidden
 #line 270
  testRunner.When("a pet is created", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -1419,17 +1419,17 @@ this.ScenarioInitialize(scenarioInfo);
 #line 272
  testRunner.And("the response contains the posted values", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-                TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table55 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table17.AddRow(new string[] {
+                table55.AddRow(new string[] {
                             "additionalMetadata",
                             "metainfo"});
-                table17.AddRow(new string[] {
+                table55.AddRow(new string[] {
                             "file",
                             "C:\\Users\\Ioana\\Pictures\\Screenpresso\\test.png"});
 #line 273
- testRunner.Given("the values:", ((string)(null)), table17, "Given ");
+ testRunner.Given("the values:", ((string)(null)), table55, "Given ");
 #line hidden
 #line 277
  testRunner.When("the \"image\" of the pet is updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
@@ -1480,20 +1480,20 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-                TechTalk.SpecFlow.Table table18 = new TechTalk.SpecFlow.Table(new string[] {
+                TechTalk.SpecFlow.Table table56 = new TechTalk.SpecFlow.Table(new string[] {
                             "variable",
                             "value"});
-                table18.AddRow(new string[] {
+                table56.AddRow(new string[] {
                             "id",
                             string.Format("{0}", id)});
-                table18.AddRow(new string[] {
+                table56.AddRow(new string[] {
                             "additionalMetadata",
                             string.Format("{0}", additionalMetadata)});
-                table18.AddRow(new string[] {
+                table56.AddRow(new string[] {
                             "file",
                             string.Format("{0}", file)});
 #line 283
- testRunner.Given("the values:", ((string)(null)), table18, "Given ");
+ testRunner.Given("the values:", ((string)(null)), table56, "Given ");
 #line hidden
 #line 288
  testRunner.When("the \"image\" of the pet is updated", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");

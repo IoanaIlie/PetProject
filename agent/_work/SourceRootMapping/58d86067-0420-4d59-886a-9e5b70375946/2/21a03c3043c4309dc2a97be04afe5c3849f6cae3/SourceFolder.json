@@ -1,0 +1,26 @@
+﻿{
+  "build_artifactstagingdirectory": "1\\a",
+  "agent_builddirectory": "1",
+  "collectionUrl": "https://dev.azure.com/ilieioanaramona/",
+  "definitionName": "Execute PetProject with Default",
+  "repositoryTrackingInfo": [
+    {
+      "identifier": "__designer_repo",
+      "repositoryType": "Git",
+      "repositoryUrl": "https://ilieioanaramona@dev.azure.com/ilieioanaramona/PetProject/_git/PetProject",
+      "sourcesDirectory": "1\\s\\PetProject"
+    }
+  ],
+  "fileFormatVersion": 3,
+  "lastRunOn": "08/02/2021 21:56:14 +02:00",
+  "repositoryType": "Git",
+  "lastMaintenanceAttemptedOn": "",
+  "lastMaintenanceCompletedOn": "",
+  "build_sourcesdirectory": "1\\s",
+  "common_testresultsdirectory": "1\\TestResults",
+  "collectionId": "58d86067-0420-4d59-886a-9e5b70375946",
+  "definitionId": "2",
+  "hashKey": "21a03c3043c4309dc2a97be04afe5c3849f6cae3",
+  "repositoryUrl": "https://ilieioanaramona@dev.azure.com/ilieioanaramona/PetProject/_git/PetProject",
+  "system": "build"
+}

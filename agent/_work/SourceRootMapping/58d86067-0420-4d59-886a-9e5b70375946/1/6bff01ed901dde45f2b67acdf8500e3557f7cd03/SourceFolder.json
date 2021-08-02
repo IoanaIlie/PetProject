@@ -1,0 +1,26 @@
+﻿{
+  "build_artifactstagingdirectory": "2\\a",
+  "agent_builddirectory": "2",
+  "collectionUrl": "https://dev.azure.com/ilieioanaramona/",
+  "definitionName": "Execute Pet Tests",
+  "repositoryTrackingInfo": [
+    {
+      "identifier": "__designer_repo",
+      "repositoryType": "Git",
+      "repositoryUrl": "https://ilieioanaramona@dev.azure.com/ilieioanaramona/Pet/_git/Pet",
+      "sourcesDirectory": "2\\s\\Pet"
+    }
+  ],
+  "fileFormatVersion": 3,
+  "lastRunOn": "08/02/2021 21:47:51 +02:00",
+  "repositoryType": "Git",
+  "lastMaintenanceAttemptedOn": "",
+  "lastMaintenanceCompletedOn": "",
+  "build_sourcesdirectory": "2\\s",
+  "common_testresultsdirectory": "2\\TestResults",
+  "collectionId": "58d86067-0420-4d59-886a-9e5b70375946",
+  "definitionId": "1",
+  "hashKey": "6bff01ed901dde45f2b67acdf8500e3557f7cd03",
+  "repositoryUrl": "https://ilieioanaramona@dev.azure.com/ilieioanaramona/Pet/_git/Pet",
+  "system": "build"
+}
