@@ -10,7 +10,7 @@ namespace PetProject.Helper
 {
     public static class PetHelper
     {
-        public static string DEFAULT = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fde%2Fcategory%2Fnature&psig=AOvVaw0AA1xAdD9YN_KgiBzTAgxz&ust=1627815241456000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJCrtr2SjfICFQAAAAAdAAAAABAI";
+        public static string DEFAULT = Environment.GetEnvironmentVariable("imageUpload", EnvironmentVariableTarget.Process);
         public static string DEFAULT2 = "";
         public static Pet CreatePet(dynamic petVariables)
         {
@@ -54,7 +54,7 @@ namespace PetProject.Helper
 
             return pet;
         }
-        
+
 
     }
 

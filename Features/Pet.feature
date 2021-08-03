@@ -3,7 +3,7 @@
 #petstatus - 1 = Available
 #pet.status - 0 = Sold
 #pet.status - 2 = Pending
-@positive
+@positive @CreatePet
 Scenario Outline: 1. Create pet using valid values
 	Given the pet with:
 		| variable     | value          |
@@ -28,7 +28,7 @@ Scenario Outline: 1. Create pet using valid values
 		| 3  | Lila1 | 1      | 1          | NicePet      | 4     | Tag3    |
 		| 4  | Lila2 | 2      | 2          | NicePets     | 5     | Tag4    |
 
-@validation
+@negative @CreatePet
 Scenario Outline: 2. Create pet using invalid and mandatory(name and photoUrls) values values
 	Given the pet with:
 		| variable  | value   |
@@ -46,7 +46,7 @@ Scenario Outline: 2. Create pet using invalid and mandatory(name and photoUrls) 
 		| 4  | 0               | Dog  |           |
 		| 5  | 0               |      |           |
 
-@validation
+@validation @CreatePet
 Scenario Outline: 3. Create Pet - duplicate detection for the same id and status
 	Given the pet with:
 		| variable  | value     |
@@ -74,11 +74,12 @@ Scenario Outline: 3. Create Pet - duplicate detection for the same id and status
 		| 5  | 50  | 0       | 50  | 2       | 200               |
 		| 6  | 60  | 2       | 60  | 1       | 200               |
 
-@validation
+@positive @SearchPet
 Scenario Outline: 4. Search pet by status validation
 	Given the status filter as <status>
 	When try to find the pet by "STATUS"
-	Then the response contains the searched statuses
+	Then the response code should be "200"
+	And the response contains the searched statuses
 
 	Examples:
 		| ID | status |
@@ -90,7 +91,7 @@ Scenario Outline: 4. Search pet by status validation
 		| 6  | 0,2    |
 		| 7  | 0,1,2  |
 
-@positive
+@positive @UpdatePet
 Scenario Outline: 5. Modify pet using valid values
 	Given the pet with:
 		| variable     | value           |
@@ -126,7 +127,7 @@ Scenario Outline: 5. Modify pet using valid values
 		| 5  | Lila0001 | 0       | 1           | NicePet00001  | 1      | Tag00001  | Lila00001  | 1       | 2           | NicePet00002  | 2      | Tag00002  |
 		| 6  | Lila0001 | 0       | 1           | NicePet000001 | 1      | Tag000001 | Lila000001 | 2       | 2           | NicePet000002 | 2      | Tag000002 |
 
-@negative
+@negative @UpdatePet
 Scenario Outline: 6. Modify pet using invalid values
 	Given the pet with:
 		| variable     | value           |
@@ -157,7 +158,7 @@ Scenario Outline: 6. Modify pet using invalid values
 		| 1  | Lila1  | 1       | 1           | NicePet1      | 1      | Tag1     | 1                 | Lila2  | 2           | NicePet2      | 2      | Tag2     | 400            |
 		| 2  | Lila01 | 1       | 1           | NicePet01     | 1      | Tag01    | 99999999999999999 | Lila01 | 2           | NicePet02     | 2      | Tag02    | 404            |
 
-@positive
+@positive @DeletePet
 Scenario Outline: 7. Delete existing pet
 	Given the pet with:
 		| variable     | value          |
@@ -183,7 +184,7 @@ Scenario Outline: 7. Delete existing pet
 		| 2  | Lila0 | 0      | 2          | NicePets     | 3     | Tag2    |
 		| 3  | Lila2 | 2      | 2          | NicePets     | 5     | Tag4    |
 
-@negative
+@negative @DeletePet
 Scenario Outline: 8. Delete pet - invalid id
 	Given the pet with:
 		| variable | value |
@@ -198,7 +199,7 @@ Scenario Outline: 8. Delete pet - invalid id
 		| 1  | -1                  | 400            |
 		| 2  | 9999999999999999999 | 404            |
 
-@positive
+@positive @UpdatePet
 Scenario Outline: 9. Update name and status - valid values
 	Given the pet with:
 		| variable  | value     |
@@ -225,7 +226,7 @@ Scenario Outline: 9. Update name and status - valid values
 		| 5  | Lila0001 | 0       | Lila00001  | available |
 		| 6  | Lila0001 | 0       | Lila000001 | pending   |
 
-@negative
+@negative @UpdatePet
 Scenario Outline: 10. Update name and status - invalid values
 	Given the pet with:
 		| variable  | value     |
@@ -250,7 +251,7 @@ Scenario Outline: 10. Update name and status - invalid values
 		| 3  | Lila001  | 2       | Lila   | $%^&$%^*$ |
 		| 4  | Lila0001 | 2       | Lila   |           |
 
-@negative
+@negative @UpdatePet
 Scenario: 11. Update name and status - pet not foud
 	Given the values:
 		| variable | value  |
@@ -260,7 +261,7 @@ Scenario: 11. Update name and status - pet not foud
 	When the "form" of the pet is updated
 	Then the response code should be "404"
 
-@positive
+@positive @UpdatePetImage
 Scenario: 12. Update pet with image
 	Given the pet with:
 		| variable  | value   |
@@ -278,7 +279,7 @@ Scenario: 12. Update pet with image
 	Then the response code should be "200"
 	And the response contains the posted values
 
-@negative
+@negative @UpdatePet
 Scenario Outline: 13. Update pet with image - validations
 	Given the values:
 		| variable           | value                |
@@ -295,3 +296,17 @@ Scenario Outline: 13. Update pet with image - validations
 		| 2  | 2       |                    | a.jpg | 200          |
 		| 3  | 2       | meta               |       | 200          |
 		| 4  | 2       |                    |       | 400          |
+
+@positive @CreatePet
+Scenario: 1. Create pet  - idempotency validation
+	Given the pet with:
+		| variable     | value          |
+		| name         | Lila         |
+		| status       | 1       |
+		| photoUrls    | default        |
+	When a pet is created
+	Then the response code should be "200"
+	And the response contains the posted values
+	When a pet is created
+	Then the response code should be "200"
+	And the response contains the posted values
