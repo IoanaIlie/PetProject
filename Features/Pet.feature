@@ -29,7 +29,7 @@ Scenario Outline: 1. Create pet using valid values
 		| 4  | Lila2 | 2      | 2          | NicePets     | 5     | Tag4    |
 
 @negative @CreatePet
-Scenario Outline: 2. Create pet using invalid and mandatory(name and photoUrls) values values
+Scenario Outline: 2. Create pet using invalid and mandatory(name and photoUrls) values
 	Given the pet with:
 		| variable  | value   |
 		| id        | <id>    |
